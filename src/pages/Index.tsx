@@ -142,12 +142,12 @@ export default function Index() {
     <div className="min-h-screen" style={{ background: "var(--black)" }}>
 
       {/* NAV */}
-      <nav className="fixed top-0 left-0 right-0 z-50 border-b" style={{ background: "rgba(13,13,13,0.95)", backdropFilter: "blur(12px)", borderColor: "rgba(255,255,255,0.08)" }}>
+      <nav className="fixed top-0 left-0 right-0 z-50 border-b" style={{ background: "rgba(8,12,20,0.95)", backdropFilter: "blur(12px)", borderColor: "rgba(255,255,255,0.08)" }}>
         <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
           <div className="flex items-center gap-3">
             <div className="w-1 h-8" style={{ background: "var(--red)" }} />
             <span className="font-bold text-lg tracking-wider uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--white)" }}>
-              МАКСИМ ВОЛКОВ
+              ДАНИИЛ ПЕТРОВ
             </span>
           </div>
 
@@ -188,14 +188,14 @@ export default function Index() {
       <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
         <div className="absolute inset-0">
           <img src={GYM_BG} alt="gym" className="w-full h-full object-cover" style={{ opacity: 0.25 }} />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(13,13,13,0.97) 40%, rgba(232,21,21,0.07) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(8,12,20,0.97) 40%, rgba(30,111,255,0.07) 100%)" }} />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 w-full py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium tracking-widest uppercase mb-6"
-                style={{ background: "rgba(232,21,21,0.12)", border: "1px solid rgba(232,21,21,0.3)", color: "var(--red)" }}>
+                style={{ background: "rgba(30,111,255,0.12)", border: "1px solid rgba(30,111,255,0.3)", color: "var(--red)" }}>
                 <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--red)" }} />
                 Сертифицированный тренер · Нутрициолог
               </div>
@@ -215,7 +215,7 @@ export default function Index() {
               </div>
 
               <div className="flex gap-8 mt-12 animate-fade-up delay-400" style={{ opacity: 0, animationFillMode: "forwards" }}>
-                {[["7+", "лет опыта"], ["200+", "клиентов"], ["94%", "достигают цели"]].map(([num, label]) => (
+                {[["10+", "лет опыта"], ["200+", "клиентов"], ["94%", "достигают цели"]].map(([num, label]) => (
                   <div key={label}>
                     <div className="text-3xl font-bold" style={{ fontFamily: "Oswald, sans-serif", color: "var(--red)" }}>{num}</div>
                     <div className="text-xs tracking-wide uppercase mt-1" style={{ color: "var(--gray)" }}>{label}</div>
@@ -228,9 +228,9 @@ export default function Index() {
               <div className="absolute -inset-8 rounded-full opacity-15 blur-3xl" style={{ background: "radial-gradient(circle, var(--red) 0%, transparent 70%)" }} />
               <div className="relative overflow-hidden" style={{ clipPath: "polygon(8% 0%, 100% 0%, 92% 100%, 0% 100%)" }}>
                 <img src={TRAINER_IMG} alt="Максим Волков — персональный тренер" className="w-full h-[580px] object-cover object-top" />
-                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(13,13,13,0.7) 0%, transparent 50%)" }} />
+                <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(8,12,20,0.7) 0%, transparent 50%)" }} />
               </div>
-              <div className="absolute bottom-6 left-4 right-4 p-4 rounded" style={{ background: "rgba(13,13,13,0.9)", backdropFilter: "blur(8px)", border: "1px solid rgba(232,21,21,0.25)" }}>
+              <div className="absolute bottom-6 left-4 right-4 p-4 rounded" style={{ background: "rgba(8,12,20,0.9)", backdropFilter: "blur(8px)", border: "1px solid rgba(30,111,255,0.25)" }}>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--red)" }} />
                   <span className="text-sm font-medium" style={{ color: "var(--white)" }}>Доступно 3 слота на этой неделе</span>
@@ -255,10 +255,10 @@ export default function Index() {
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div>
               <div className="text-xs tracking-widest uppercase mb-3 font-medium" style={{ color: "var(--red)" }}>О ТРЕНЕРЕ</div>
-              <h2 className="section-title mb-2">Максим Волков</h2>
+              <h2 className="section-title mb-2">Даниил Петров</h2>
               <div className="w-14 h-0.5 mb-6" style={{ background: "var(--red)" }} />
               <p className="text-base mb-5 leading-relaxed" style={{ color: "var(--gray)" }}>
-                7 лет в фитнесе, из которых 5 — в персональном тренерстве. Специализация: силовые и функциональные тренировки, коррекция тела, подготовка к соревнованиям.
+                10 лет в фитнесе, из которых 3 — в персональном тренерстве. Специализация: силовые и функциональные тренировки, коррекция тела, подготовка к соревнованиям.
               </p>
               <p className="text-base mb-8 leading-relaxed" style={{ color: "var(--gray)" }}>
                 Как нутрициолог — разрабатываю индивидуальные рационы без жёстких диет. Верю, что правильное питание и тренировки должны вписываться в жизнь, а не ломать её.
@@ -301,7 +301,7 @@ export default function Index() {
                 <p className="text-sm italic leading-relaxed" style={{ color: "var(--gray)" }}>
                   "Я не продаю обещания — я даю инструменты. Каждый клиент получает программу, которая работает именно для него."
                 </p>
-                <div className="mt-3 text-sm font-medium" style={{ color: "var(--white)" }}>— Максим Волков</div>
+                <div className="mt-3 text-sm font-medium" style={{ color: "var(--white)" }}>— Даниил Петров</div>
               </div>
             </div>
           </div>
@@ -320,11 +320,11 @@ export default function Index() {
             {SERVICES.map((s) => (
               <div key={s.title} className="card-hover p-6 rounded relative" style={{ background: "var(--black-card)", border: "1px solid rgba(255,255,255,0.07)" }}>
                 {s.tag && (
-                  <span className="absolute top-4 right-4 text-xs px-2 py-0.5 rounded font-medium" style={{ background: "rgba(232,21,21,0.18)", color: "var(--red)", border: "1px solid rgba(232,21,21,0.3)" }}>
+                  <span className="absolute top-4 right-4 text-xs px-2 py-0.5 rounded font-medium" style={{ background: "rgba(30,111,255,0.18)", color: "var(--red)", border: "1px solid rgba(30,111,255,0.3)" }}>
                     {s.tag}
                   </span>
                 )}
-                <div className="w-12 h-12 rounded flex items-center justify-center mb-4" style={{ background: "rgba(232,21,21,0.1)" }}>
+                <div className="w-12 h-12 rounded flex items-center justify-center mb-4" style={{ background: "rgba(30,111,255,0.1)" }}>
                   <Icon name={s.icon} size={22} style={{ color: "var(--red)" }} />
                 </div>
                 <h3 className="text-base font-bold mb-3 uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--white)" }}>{s.title}</h3>
@@ -449,7 +449,7 @@ export default function Index() {
             </div>
 
             {selectedSlot && !bookingOpen && (
-              <div className="text-center p-4 rounded mb-4" style={{ background: "rgba(232,21,21,0.08)", border: "1px solid rgba(232,21,21,0.25)" }}>
+              <div className="text-center p-4 rounded mb-4" style={{ background: "rgba(232,21,21,0.08)", border: "1px solid rgba(30,111,255,0.25)" }}>
                 <span style={{ color: "var(--white)" }}>Выбрано: <strong style={{ color: "var(--red)" }}>{WEEK_DAYS[activeDay]}, {selectedSlot}</strong></span>
                 <button className="btn-primary text-sm py-2 px-6 ml-4" onClick={() => setBookingOpen(true)}>Подтвердить запись</button>
               </div>
@@ -520,12 +520,11 @@ export default function Index() {
             <div className="space-y-4">
               {[
                 { icon: "Phone", label: "Телефон", value: "+7 (999) 123-45-67" },
-                { icon: "Mail", label: "Email", value: "maxim@fittrainer.ru" },
-                { icon: "MapPin", label: "Зал", value: "Москва, ул. Спортивная, 12" },
+                { icon: "MapPin", label: "Зал", value: "г. Сыктывкар, ул. Маркова" },
                 { icon: "Clock", label: "Режим", value: "Пн–Пт 7:00–22:00, Сб–Вс 9:00–20:00" },
               ].map(({ icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4 p-4 rounded" style={{ background: "var(--black-card)", border: "1px solid rgba(255,255,255,0.07)" }}>
-                  <div className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0" style={{ background: "rgba(232,21,21,0.1)" }}>
+                  <div className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0" style={{ background: "rgba(30,111,255,0.1)" }}>
                     <Icon name={icon} size={18} style={{ color: "var(--red)" }} />
                   </div>
                   <div>
@@ -591,7 +590,7 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4 text-sm" style={{ color: "var(--gray)" }}>
           <div className="flex items-center gap-2">
             <div className="w-1 h-6" style={{ background: "var(--red)" }} />
-            <span className="font-bold uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--white)" }}>МАКСИМ ВОЛКОВ</span>
+            <span className="font-bold uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--white)" }}>ДАНИИЛ ПЕТРОВ</span>
           </div>
           <div>© 2026 Персональный тренер и нутрициолог</div>
           <div className="flex gap-4">
