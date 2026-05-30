@@ -188,14 +188,14 @@ export default function Index() {
       <section className="relative min-h-screen flex items-center overflow-hidden pt-16">
         <div className="absolute inset-0">
           <img src={GYM_BG} alt="gym" className="w-full h-full object-cover" style={{ opacity: 0.25 }} />
-          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(8,12,20,0.97) 40%, rgba(30,111,255,0.07) 100%)" }} />
+          <div className="absolute inset-0" style={{ background: "linear-gradient(135deg, rgba(8,12,20,0.97) 40%, rgba(20,85,212,0.07) 100%)" }} />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 w-full py-16">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-medium tracking-widest uppercase mb-6"
-                style={{ background: "rgba(30,111,255,0.12)", border: "1px solid rgba(30,111,255,0.3)", color: "var(--red)" }}>
+                style={{ background: "rgba(20,85,212,0.12)", border: "1px solid rgba(20,85,212,0.3)", color: "var(--red)" }}>
                 <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: "var(--red)" }} />
                 Сертифицированный тренер · Нутрициолог
               </div>
@@ -230,7 +230,7 @@ export default function Index() {
                 <img src={TRAINER_IMG} alt="Максим Волков — персональный тренер" className="w-full h-[580px] object-cover object-top" />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(8,12,20,0.7) 0%, transparent 50%)" }} />
               </div>
-              <div className="absolute bottom-6 left-4 right-4 p-4 rounded" style={{ background: "rgba(8,12,20,0.9)", backdropFilter: "blur(8px)", border: "1px solid rgba(30,111,255,0.25)" }}>
+              <div className="absolute bottom-6 left-4 right-4 p-4 rounded" style={{ background: "rgba(8,12,20,0.9)", backdropFilter: "blur(8px)", border: "1px solid rgba(20,85,212,0.25)" }}>
                 <div className="flex items-center gap-3">
                   <div className="w-2 h-2 rounded-full animate-pulse" style={{ background: "var(--red)" }} />
                   <span className="text-sm font-medium" style={{ color: "var(--white)" }}>Доступно 3 слота на этой неделе</span>
@@ -320,11 +320,11 @@ export default function Index() {
             {SERVICES.map((s) => (
               <div key={s.title} className="card-hover p-6 rounded relative" style={{ background: "var(--black-card)", border: "1px solid rgba(255,255,255,0.07)" }}>
                 {s.tag && (
-                  <span className="absolute top-4 right-4 text-xs px-2 py-0.5 rounded font-medium" style={{ background: "rgba(30,111,255,0.18)", color: "var(--red)", border: "1px solid rgba(30,111,255,0.3)" }}>
+                  <span className="absolute top-4 right-4 text-xs px-2 py-0.5 rounded font-medium" style={{ background: "rgba(20,85,212,0.18)", color: "var(--red)", border: "1px solid rgba(20,85,212,0.3)" }}>
                     {s.tag}
                   </span>
                 )}
-                <div className="w-12 h-12 rounded flex items-center justify-center mb-4" style={{ background: "rgba(30,111,255,0.1)" }}>
+                <div className="w-12 h-12 rounded flex items-center justify-center mb-4" style={{ background: "rgba(20,85,212,0.1)" }}>
                   <Icon name={s.icon} size={22} style={{ color: "var(--red)" }} />
                 </div>
                 <h3 className="text-base font-bold mb-3 uppercase" style={{ fontFamily: "Oswald, sans-serif", color: "var(--white)" }}>{s.title}</h3>
@@ -449,7 +449,7 @@ export default function Index() {
             </div>
 
             {selectedSlot && !bookingOpen && (
-              <div className="text-center p-4 rounded mb-4" style={{ background: "rgba(232,21,21,0.08)", border: "1px solid rgba(30,111,255,0.25)" }}>
+              <div className="text-center p-4 rounded mb-4" style={{ background: "rgba(232,21,21,0.08)", border: "1px solid rgba(20,85,212,0.25)" }}>
                 <span style={{ color: "var(--white)" }}>Выбрано: <strong style={{ color: "var(--red)" }}>{WEEK_DAYS[activeDay]}, {selectedSlot}</strong></span>
                 <button className="btn-primary text-sm py-2 px-6 ml-4" onClick={() => setBookingOpen(true)}>Подтвердить запись</button>
               </div>
@@ -524,7 +524,7 @@ export default function Index() {
                 { icon: "Clock", label: "Режим", value: "Пн–Пт 7:00–22:00, Сб–Вс 9:00–20:00" },
               ].map(({ icon, label, value }) => (
                 <div key={label} className="flex items-start gap-4 p-4 rounded" style={{ background: "var(--black-card)", border: "1px solid rgba(255,255,255,0.07)" }}>
-                  <div className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0" style={{ background: "rgba(30,111,255,0.1)" }}>
+                  <div className="w-10 h-10 rounded flex items-center justify-center flex-shrink-0" style={{ background: "rgba(20,85,212,0.1)" }}>
                     <Icon name={icon} size={18} style={{ color: "var(--red)" }} />
                   </div>
                   <div>
